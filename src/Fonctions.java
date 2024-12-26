@@ -6,8 +6,6 @@ public class Fonctions {
     static ArrayList<User> users ;
     static Scanner scanner ;
 
-
-
     public Fonctions() {
         users=new ArrayList<>();
         scanner=new Scanner(System.in);
