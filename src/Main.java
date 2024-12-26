@@ -16,7 +16,8 @@ public class Main {
             System.out.println("5: Remove a Person");
 
             System.out.println("0: Exit");
-            System.out.println("_____________________________________________________");
+
+            System.out.println("______________________________________________");
             System.out.print("Enter your choice: ");
             choice = scanner.nextLine();
 
@@ -42,7 +43,7 @@ public class Main {
                     break;
 
                 case "0":
-                    System.out.println("Exiting... Goodbye!");
+                    System.out.println(" Goodbye........!");
                     break;
 
                 default:

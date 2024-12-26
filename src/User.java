@@ -41,12 +41,11 @@ public class User extends Person {
 
     @Override
     public String toString() {
-        return "User{" +
-                "cin='" + cin + '\'' +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", role=" + role.getRolename() +
-                ", email='" + email + '\'' +
-                '}';
+        return "User  \n" +
+                "cin = " + cin + '\n' +
+                "name = " + name + '\n' +
+                " age = " + age +'\n'+
+                " role =" + role.getRolename() +'\n'+
+                " email =" + email + '\n';
     }
 }

@@ -1,3 +1,4 @@
+import java.security.spec.RSAOtherPrimeInfo;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -19,7 +20,7 @@ public class Fonctions {
         String name=scanner.nextLine();
         System.out.print("age : ");
         int age=scanner.nextInt();
-        System.out.println("Role : ");
+        System.out.print("Role : ");
         Role role = new Role(scanner.next());
         //sc.nextLine();
         System.out.print("email : ");
@@ -32,16 +33,18 @@ public class Fonctions {
     }
     static void displayPersons()
     {
+        if (users.isEmpty()){
+            System.out.println(" list vide ");
+        }
         for (User user:users)
         {
             System.out.println("=========== Persons ===========:");
-          //  System.out.println(user);
 
 
             System.out.println(user);
         }
-       // users.forEach(System.out::println);
     }
+
     static void searchPersons()
     {
         System.out.println("CIN for search : ");
@@ -105,6 +108,9 @@ public class Fonctions {
     }
     static void remvePerson()
     {
+        if (users.isEmpty()){
+            System.out.println("choice invalid");
+        }
         System.out.print("Enter Cin remove : ");
         String cin = scanner.next();
         scanner.nextLine();
