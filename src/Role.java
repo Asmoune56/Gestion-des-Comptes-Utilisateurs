@@ -9,9 +9,7 @@ class Role {
     String getRolename() {
         return Rolename;
     }
-
     void setRolename(String rolename) {
         Rolename = rolename;
     }
 }
-

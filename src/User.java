@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class User extends Person {
 
-
     private Role role;
     private String email;
     private String password;

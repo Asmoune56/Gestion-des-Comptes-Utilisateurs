@@ -3,7 +3,6 @@ class Person
     String name,cin;
     int age;
 
-
     public Person(String name, int age,String cin) {
         this.name = name;
         this.age = age;

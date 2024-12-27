@@ -56,7 +56,6 @@ public class Fonctions {
               System.out.println(user);
 
           }
-
         }
         if (!found)
         {
@@ -112,7 +111,6 @@ public class Fonctions {
         System.out.print("Enter Cin remove : ");
         String cin = scanner.next();
         scanner.nextLine();
-
         users.removeIf(user -> user.getCin().equals(cin));
     }
 }
